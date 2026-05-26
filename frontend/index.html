@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Food Recommendation System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        🍔 FoodAI
+    </div>
+
+    <ul class="nav-links">
+
+        <li><a href="#">Home</a></li>
+
+        <li><a href="#">Restaurants</a></li>
+
+        <li><a href="#">Trending</a></li>
+
+        <li><a href="#">About</a></li>
+
+    </ul>
+
+</nav>
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="hero-text">
+
+            <h1>
+                Smart Food Recommendation System
+            </h1>
+
+            <p>
+                Personalized AI-powered food suggestions
+                based on your taste, budget, and spice level.
+            </p>
+
+            <button class="hero-btn">
+                Explore Foods
+            </button>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop"
+                 alt="Food">
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FORM SECTION -->
+
+<section class="form-section">
+
+    <div class="form-container">
+
+        <h2>
+            User Preferences
+        </h2>
+
+        <div class="input-group">
+
+            <label>Name</label>
+
+            <input type="text"
+                   id="name"
+                   placeholder="Enter your name">
+
+        </div>
+
+        <div class="input-group">
+
+            <label>Preferred Cuisine</label>
+
+            <select id="cuisine">
+
+                <option>Indian</option>
+
+                <option>Chinese</option>
+
+                <option>Italian</option>
+
+            </select>
+
+        </div>
+
+        <div class="input-group">
+
+            <label>Spice Level</label>
+
+            <select id="spice">
+
+                <option>Low</option>
+
+                <option>Medium</option>
+
+                <option>High</option>
+
+            </select>
+
+        </div>
+
+        <div class="input-group">
+
+            <label>Budget</label>
+
+            <input type="number"
+                   id="budget"
+                   placeholder="Enter budget">
+
+        </div>
+
+        <button onclick="showRecommendation()"
+                class="recommend-btn">
+
+            Get Recommendation
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- RECOMMENDATION SECTION -->
+
+<section class="recommendation-section">
+
+    <h2>
+        Recommended Foods
+    </h2>
+
+    <div class="food-grid"
+         id="foodCards">
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © 2026 Food Recommendation System
+    </p>
+
+</footer>
+
+<script src="app.js"></script>
+
+</body>
+</html>
